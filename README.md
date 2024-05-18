@@ -52,12 +52,16 @@ In ***rymind.py line 48*** ``with sr.Microphone(device_index=1) as source:``, ch
 
 ## Modifying the system:
 
-#### New statements for the bot to answer:
+### New statements for the bot to answer:
 1. In  [intents.json](intents.json/) file, add a new unique tag and in patterns: add the new statements related to the tag and in response: add the possible responses you want the bot to respond.
 2. run ```train.py``` to train the chatbot with new data added
 
-#### New face to be recognized:
+   
+
+### New face to be recognized:
 1. If you want to add a face to be recognized, add an image in [images folder](images/) and make sure the image is renamed with the person's name.
-2. If you want this person to be identified by the chatbot, in  [intents.json](intents.json/) file, add a new unique tag and in patterns: add the new person's name and in response: add their information on how you want that person to be remembered.
-3. run ```train.py``` to train the chatbot with new data added.
+> [!IMPORTANT]
+> The image must contain a single detectable face. It must be clear.
+3. If you want this person to be identified by the chatbot, in  [intents.json](intents.json/) file, add a new unique tag and in patterns: add the new person's name and in response: add their information on how you want that person to be remembered.
+4. run ```train.py``` to train the chatbot with new data added.
 
