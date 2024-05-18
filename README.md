@@ -25,8 +25,10 @@ https://github.com/donnalynnn/RyMind_NLP_and_GVC_project-DonnalynReroma/assets/1
 In dlib folder, I prepared few wheels for dlib. Choose which one is compatible with the python you're using. notice cp38, cp311, cp312 these are indication for which python version it is compatible. Navigate to dlib, ``cd dlib`` 
 Install the wheel that is compatible with your current python version.
 
->example for python 3.12 64-bit:
->``pip install dlib-19.19.0-cp38-cp38-win_amd64.whl``
+example for python 3.8 64-bit:
+>``pip install dlib-19.19.0-cp38-cp38-win_amd64.whl`` or ``python -m pip install dlib-19.22.99-cp38-cp38-win_amd64.whl``
+
+ref: https://stackoverflow.com/a/76630254/24352433
 
 *
 > [!WARNING]
@@ -35,3 +37,12 @@ Install the wheel that is compatible with your current python version.
 
 **FIX:**
 In ***face_detection.py line 8*** ``self.cap = cv2.VideoCapture(0)``, change the index to use your working camera
+
+*
+> [!WARNING]
+> Won't recognize what you're saying and keeps returning "Sorry, I didn't get that." or
+> AssertionError: Audio source must be entered before adjusting, see documentation for ``AudioSource``; are you using ``source`` outside of a ``with`` statement?
+> AttributeError: 'NoneType' object has no attribute 'close'
+
+**FIX:**
+In ***rymind.py line 48*** ``with sr.Microphone(device_index=1) as source:``, change the index to use your working microphone
