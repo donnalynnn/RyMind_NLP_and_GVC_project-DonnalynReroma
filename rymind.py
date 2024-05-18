@@ -44,7 +44,7 @@ def listen():
     recognizer = sr.Recognizer()
     while True:
         # change device_index if youre using a different microphone
-        with sr.Microphone(device_index=1) as source:
+        with sr.Microphone(device_index=0) as source:
             print("Listening...")
             recognizer.adjust_for_ambient_noise(source)
             audio = recognizer.listen(source)
@@ -90,7 +90,7 @@ while True:
     if prob.item() > 0.75: 
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                respond={random.choice(intent['responses'])}
+                respond=random.choice(intent['responses'])
                 print(f"{bot_name}: {respond}")
                 text_to_speech(respond)
             
@@ -115,7 +115,7 @@ while True:
                     tag = tags[predicted.item()]
                     for intent in intents['intents']:
                         if tag == intent["tag"]:
-                            respond={random.choice(intent['responses'])}
+                            respond=random.choice(intent['responses'])
                             text_to_speech(respond)
                             print(f"{bot_name}: {respond}")
                             
