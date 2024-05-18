@@ -1,0 +1,137 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "Hello",
+          "Good day",
+          "Hey chatbot",
+          "Hey Riri"
+        ],
+        "responses": [
+          "Hey",
+          "Hello! I'm Ryry, I'm here to help you remember your loved ones. How can I assist you today",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "Goodbye, see you later!",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]
+      },
+      
+      {
+        "tag": "face_recognition",
+        "patterns": [
+          "Who is she",
+          "Tell me about that person",
+          "Do you know that person",
+          "Do you know him?",
+          "Who are you?",
+          "I don't remember that person"
+
+        ],
+        "responses": [
+          "initializing face recognition, this might take a few seconds"
+        ]
+      },
+
+      {
+        "tag": "dementia",
+        "patterns": [
+          "Tell me about Dementia",
+          "What is dementia",
+          "What is dimentia"
+
+
+        ],
+        "responses": [
+          "Dementia is a general term for a group of brain disorders that affect memory, thinking, and social abilities severely enough to interfere with daily life."
+        ]
+      },
+
+      {
+        "tag": "is_dementia_patient",
+        "patterns": [
+          "Do I have Dimentia",
+          "Am I sick?"
+
+        ],
+        "responses": [
+          "If you're using this app, you most likely are suffering from dementia, don't worry though, I will help you.",
+          "Most likely, you have me though I will be your companion, I'll help you remember"
+        ]
+      },
+
+      {
+        "tag": "forget",
+        "patterns": [
+          "Will I forget everything one day?",
+          "Will I forget my friends?"
+
+        ],
+        "responses": [
+          "Even if you forget, I will help you remember."
+        ]
+      },
+
+      {
+        "tag": "Creator",
+        "patterns": [
+          "Donnalyn Reroma"
+        ],
+        "responses": [
+          "Donnalyn created this project. She's my creator!"
+        ]
+      },
+
+      {
+        "tag": "Person2",
+        "patterns": [
+          "Joan Borja"
+        ],
+        "responses": [
+          "Joan is Donna's friend, she's very small but she has the biggest heart"
+        ]
+      },
+
+      {
+        "tag": "idk",
+        "patterns": [
+          "unknown",
+          "none"
+        ],
+        "responses": [
+          "I do not have a record of this person but they seem like great person"
+        ]
+      }
+
+
+
+    ]
+  }
+  
