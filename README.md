@@ -12,6 +12,21 @@ In the realm of dementia care, one of the most distressing symptoms faced by pat
 4. Wait for a few seconds as it may take a while since face recognition alongside the chatbot will be running together.
 
 ## Demo:
+https://github.com/donnalynnn/RyMind_NLP_and_GVC_project-DonnalynReroma/assets/143490599/f5bea4b4-d04d-4428-92c9-dfb75392599f
 
-https://github.com/donnalynnn/RyMind_NLP_and_GVC_project-DonnalynReroma/assets/143490599/016f9c1e-a994-40e0-b76f-b58ae768d801
 
+### Issues you might encounter:
+> [!WARNING]
+> Failed to build dlib
+> ERROR: Could not build wheels for dlib, which is required to install pyproject.toml-based projects
+
+**FIX:**
+In dlib folder, I prepared few wheels for dlib. Choose which one is compatible with the python you're using. notice cp38, cp311, cp312 these are indication for which python version it is compatible. Navigate to dlib, ``cd dlib`` 
+Install the wheel that is compatible with your current python version.
+
+>example for python 3.12 64-bit:
+>``pip install dlib-19.19.0-cp38-cp38-win_amd64.whl``
+
+> [!WARNING]
+> Failed to build dlib
+> ERROR: Could not build wheels for dlib, which is required to install pyproject.toml-based projects
