@@ -32,5 +32,6 @@ Install the wheel that is compatible with your current python version.
 > [!WARNING]
 > [ERROR:0@21.593] global obsensor_uvc_stream_channel.cpp:159 cv::obsensor::getStreamChannelGroup Camera index out of range
 >Error opening video source
+
 **FIX:**
 In ***face_detection.py line 8*** ``self.cap = cv2.VideoCapture(0)``, change the index to use your working camera
