@@ -26,7 +26,9 @@ In dlib folder, I prepared few wheels for dlib. Choose which one is compatible w
 Install the wheel that is compatible with your current python version.
 
 example for python 3.8 64-bit:
->``pip install dlib-19.19.0-cp38-cp38-win_amd64.whl`` or ``python -m pip install dlib-19.22.99-cp38-cp38-win_amd64.whl``
+>```pip install dlib-19.19.0-cp38-cp38-win_amd64.whl``` or ```python -m pip install dlib-19.22.99-cp38-cp38-win_amd64.whl```
+
+run ``pip install face_recognition`` again
 
 ref: https://stackoverflow.com/a/76630254/24352433
 
