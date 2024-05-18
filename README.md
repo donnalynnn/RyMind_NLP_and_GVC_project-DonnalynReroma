@@ -3,7 +3,7 @@
 In the realm of dementia care, one of the most distressing symptoms faced by patients is the inability to remember their loved ones. To address this issue, I have developed an assistive technology named RyMind. At its core, RyMind integrates a ***face recognition system*** with a chatbot, which serves as a ***communication support enhanced by speech-to-text capabilities***. This unique combination aims to provide a personalized and effective solution to the problem of forgetting loved ones.
 
 > [!NOTE]
-> Camera and microphone is a required.
+> Working camera and microphone are required.
 
 ## How to run:
 1. Camera and microphone are required to run this project, this is set to use your default camera and mic however, if you wish to use another device you can change device index of microphone in ***rymind.py line 48*** ``with sr.Microphone(device_index=1) as source:`` & the camera in ***face_detection.py line 8*** ``self.cap = cv2.VideoCapture(0)``
