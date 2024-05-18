@@ -48,3 +48,16 @@ In ***face_detection.py line 8*** ``self.cap = cv2.VideoCapture(0)``, change the
 
 **FIX:**
 In ***rymind.py line 48*** ``with sr.Microphone(device_index=1) as source:``, change the index to use your working microphone
+
+
+## Modifying the system:
+
+#### New statements for the bot to answer:
+1. In  [intents.json](intents.json/) file, add a new unique tag and in patterns: add the new statements related to the tag and in response: add the possible responses you want the bot to respond.
+2. run ```train.py``` to train the chatbot with new data added
+
+#### New face to be recognized:
+1. If you want to add a face to be recognized, add an image in [images folder](images/) and make sure the image is renamed with the person's name.
+2. If you want this person to be identified by the chatbot, in  [intents.json](intents.json/) file, add a new unique tag and in patterns: add the new person's name and in response: add their information on how you want that person to be remembered.
+3. run ```train.py``` to train the chatbot with new data added.
+
